@@ -15,12 +15,15 @@
 # VARIABLES:    %eax holds the system call number
 #               %ebx holds the return status
 
-.section .data
+.section .data  # Infos for the assembler
+                # No data is used in our program.
 
-.section .text
-.globl _start
+.section .text  # Actual code
 
-_start:
+.globl _start   # Declare global symbol
+
+_start:         # Define global symbol
+
 movl $1, %eax   # "Move a 1 into eax register"  
                 # this is the linux kernel command
                 # number (system call) for exiting
