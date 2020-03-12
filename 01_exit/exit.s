@@ -1,3 +1,9 @@
+# Build & run:
+# - as exit.s -o exit.o     (Assemble)
+# - ld exit.o -o exit       (Link)
+# - ./exit                  (Execute)
+# - echo $?                 (Display exit code)
+
 # PURPOSE:  Simple program that exists and returns a
 #           status code back to the Linux kernel
 #
