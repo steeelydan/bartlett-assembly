@@ -42,7 +42,10 @@ movl %eax, %ebx                 # since this is the first item,
 
 start_loop:
 # Check if we've hit the end
-cmpl %data_items(,%edi,4), 56(%data_items) # ?!?!?!?
+
+cmpl $13, %edi # Use length
+# Still open: Use end ADDRESS!
+
 # Jump statements:
 # je: Jump if equal
 # jg: Jump if 2nd > 1st
