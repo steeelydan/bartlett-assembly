@@ -22,7 +22,7 @@ pushl %eax              # save the first answer before
                         # calling the next function
 
 pushl $2                # push second argument
-pushl $5                # push first argument [?]
+pushl $5                # push first argument
 call power              # Call the function
 addl $8, %esp           # Move the stack pointer back
 
